@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(const MainApp());
@@ -64,6 +65,60 @@ class MainApp extends StatelessWidget {
                     foregroundColor: Colors.white,
                   ),
                   child: Text('Help'),
+                ),
+              ),
+              SizedBox(height: 32),
+              SizedBox(
+                width: 300,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    SizedBox(
+                      width: 56,
+                      height: 56,
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          shape: const CircleBorder(),
+                          backgroundColor: Color.fromARGB(255, 36, 8, 192),
+                          foregroundColor: Colors.white,
+                          padding: EdgeInsets.zero,
+                          elevation: 4,
+                        ),
+                        child: FaIcon(FontAwesomeIcons.facebookF, color: Colors.white, size: 28),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 56,
+                      height: 56,
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          shape: const CircleBorder(),
+                          backgroundColor: Color.fromARGB(255, 0, 0, 0),
+                          foregroundColor: Colors.white,
+                          padding: EdgeInsets.zero,
+                          elevation: 4,
+                        ),
+                        child: FaIcon(FontAwesomeIcons.xTwitter, color: Colors.white, size: 28),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 56,
+                      height: 56,
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        style: ElevatedButton.styleFrom(
+                          shape: const CircleBorder(),
+                          backgroundColor: Color.fromARGB(255, 6, 100, 223),
+                          foregroundColor: Colors.white,
+                          padding: EdgeInsets.zero,
+                          elevation: 4,
+                        ),
+                        child: FaIcon(FontAwesomeIcons.linkedinIn, color: Colors.white, size: 28),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
